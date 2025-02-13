@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 connectDB();
 
-const allowedOrigins = ['https://portfolio-frontend-liart-omega.vercel.app/'];
+const allowedOrigins = ['http://localhost:5173'];
 app.use(cors({origin:'*', credentials: true}))
 
 const PORT = process.env.PORT || 5000;
