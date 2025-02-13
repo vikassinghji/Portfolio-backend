@@ -11,7 +11,7 @@ app.use(express.json());
 connectDB();
 
 const allowedOrigins = ['https://portfolio-frontend-liart-omega.vercel.app/'];
-app.use(cors({origin:allowedOrigins, credentials: true}))
+app.use(cors({origin:'*', credentials: true}))
 
 const PORT = process.env.PORT || 5000;
 
